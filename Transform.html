@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="./Transform.css">
+</head>
+
+<body>
+    <header class="head">
+        <nav class="navbar container flex">
+            <div class="nav-logo">Transform</div>
+            <ul class="navlist list-style flex">
+                <li class="nav-item"><a class="nav-item-list" href="#Translate">Translate</a></li>
+                <li class="nav-item"><a class="nav-item-list" href="#Scale">Scale</a></li>
+                <li class="nav-item"><a class="nav-item-list" href="#Rotate">Rotate</a></li>
+                <li class="nav-item"><a class="nav-item-list" href="#Skew">Skew</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Translate" class="section-translate">
+        <div class="translate container">
+            <div class="translate-container flex">
+                <div class="translate-content">
+                    <h2>TranslateX()</h2>
+                    <p>The <code>translateX()</code> function moves an element horizontally along the X-axis.<br>
+                        A positive value shifts it to the right, and a negative value shifts it to the left.<br>
+                    </p>
+                    <p><strong>Code:</strong> <code>transform: translateX(100px);</code>
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="box translate-x"></div>
+                </div>
+            </div>
+            <div class="translate-container flex">
+                <div class="translate-content">
+                    <h2>TranslateY()</h2>
+                    <p>The <code>translateY()</code> function moves an element vertically along the Y-axis.<br>
+                        A positive value moves it downward, and a negative value moves it upward.<br></p>
+                    <p><strong>Code:</strong> <code>transform: translateY(100px);</code>
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="box translate-y"></div>
+                </div>
+            </div>
+            <div class="translate-container flex">
+                <div class="translate-content">
+                    <h2>Translate()</h2>
+                    <p>The <code>translate()</code> function moves an element in both horizontal and vertical
+                        directions.<br>
+                        The first value is for the X-axis (left/right), and the second is for the Y-axis (up/down).<br>
+                    </p>
+                    <p><strong>Code:</strong> <code>transform: translate(100px, 50px);</code>
+                    </p>
+                </div>
+                <div class="flex">
+                    <div class="box translate-xy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Scale" class="section-scale">
+        <div class="scale container">
+
+            <!-- ScaleX -->
+            <div class="scale-container flex">
+                <div class="scale-content">
+                    <h2>ScaleX()</h2>
+                    <p>The <code>scaleX()</code> function resizes an element horizontally.</p>
+                    <p><strong>Code:</strong> <code>transform: scaleX(1.5);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box scale-x"></div>
+                </div>
+            </div>
+
+            <!-- ScaleY -->
+            <div class="scale-container flex">
+                <div class="scale-content">
+                    <h2>ScaleY()</h2>
+                    <p>The <code>scaleY()</code> function resizes an element vertically.</p>
+                    <p><strong>Code:</strong> <code>transform: scaleY(1.5);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box scale-y"></div>
+                </div>
+            </div>
+
+            <!-- Scale -->
+            <div class="scale-container flex">
+                <div class="scale-content">
+                    <h2>Scale()</h2>
+                    <p>The <code>scale()</code> function resizes an element in both X and Y directions.</p>
+                    <p><strong>Code:</strong> <code>transform: scale(1.5, 1.2);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box scale"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Rotate" class="section-rotate">
+        <div class="rotate container">
+
+            <!-- Rotate (Z-axis / 2D) -->
+            <div class="rotate-container flex">
+                <div class="rotate-content">
+                    <h2>Rotate()</h2>
+                    <p>The <code>rotate()</code> function rotates the element in 2D space (Z-axis).<br>
+                        Positive values rotate clockwise, negative values counter-clockwise.</p>
+                    <p><strong>Code:</strong> <code>transform: rotate(45deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box rotate"></div>
+                </div>
+            </div>
+
+            <!-- RotateX -->
+            <div class="rotate-container flex">
+                <div class="rotate-content">
+                    <h2>RotateX()</h2>
+                    <p>The <code>rotateX()</code> function rotates the element around the X-axis (horizontal axis).<br>
+                        This creates a vertical 3D flip effect.</p>
+                    <p><strong>Code:</strong> <code>transform: rotateX(45deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box rotate-x"></div>
+                </div>
+            </div>
+
+            <!-- RotateY -->
+            <div class="rotate-container flex">
+                <div class="rotate-content">
+                    <h2>RotateY()</h2>
+                    <p>The <code>rotateY()</code> function rotates the element around the Y-axis (vertical axis).<br>
+                        This creates a horizontal 3D flip effect.</p>
+                    <p><strong>Code:</strong> <code>transform: rotateY(45deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box rotate-y"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Skew" class="section-skew">
+        <div class="skew container">
+
+            <!-- SkewX -->
+            <div class="skew-container flex">
+                <div class="skew-content">
+                    <h2>SkewX()</h2>
+                    <p>The <code>skewX()</code> function skews an element horizontally.</p>
+                    <p><strong>Code:</strong> <code>transform: skewX(20deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box skew-x"></div>
+                </div>
+            </div>
+
+            <!-- SkewY -->
+            <div class="skew-container flex">
+                <div class="skew-content">
+                    <h2>SkewY()</h2>
+                    <p>The <code>skewY()</code> function skews an element vertically.</p>
+                    <p><strong>Code:</strong> <code>transform: skewY(20deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box skew-y"></div>
+                </div>
+            </div>
+
+            <!-- Skew -->
+            <div class="skew-container flex">
+                <div class="skew-content">
+                    <h2>Skew()</h2>
+                    <p>The <code>skew()</code> function skews an element in both directions.</p>
+                    <p><strong>Code:</strong> <code>transform: skew(20deg, 10deg);</code></p>
+                </div>
+                <div class="flex">
+                    <div class="box skew"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

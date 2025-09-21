@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body,
+html {
+
+    width: 100%;
+    height: 100%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #f0f4f8a5, #d9e2ecdb);
+    color:#222
+}
+
+.list-style {
+    list-style: none;
+}
+
+/*                  utility classes                */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    margin:5rem;
+    height:20vh;
+    width:10vw;
+    border-radius:20px ;
+    background: linear-gradient(45deg, #d41edd, #a132eb);
+    box-shadow: 2px 0px 20px #d41edd;
+}
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+
+/*                 header                    */
+
+.head {
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+
+.head .navbar {
+    justify-content: space-between;
+}
+
+.navbar .nav-logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: cornsilk
+}
+
+.navlist {
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-item-list {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.nav-item-list:hover {
+    color: chartreuse;
+    padding-bottom: 1.05rem;
+    border-bottom: 4px solid chartreuse;
+    transition: transform 0.2s ease-in-out;
+}
+.nav-item:hover {
+    transform: scale(1.3);
+    transition: transform 0.2s ease-in-out;
+}
+/* ################################ Translate ############################### */
+.section-translate,
+.section-scale,
+.section-rotate,
+.section-skew {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.translate-container,
+.scale-container,
+.rotate-container,
+.skew-container {
+    background: linear-gradient(45deg, rgb(220, 196, 196), rgb(230, 237, 198));
+    /* border: 2px solid chartreuse; */
+    box-shadow: 0 0 5px chartreuse;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.translate-content,
+.scale-content,
+.rotate-content,
+.skew-content {
+    width: 49%;
+}
+
+.translate-content + .flex,
+.scale-content + .flex,
+.rotate-content + .flex,
+.skew-content + .flex {
+    perspective: 600px;
+    width: 49%;
+    justify-content: center;
+    align-items: center;
+}
+
+.translate-content h2,
+.scale-content h2,
+.rotate-content h2,
+.skew-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.translate-content p,
+.scale-content p,
+.rotate-content p,
+.skew-content p {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ####################  On hover, apply translate  #################### */
+
+.translate-x:hover {
+    transform: translateX(100px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.translate-y:hover {
+    transform: translateY(100px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.translate-xy:hover {
+    transform: translate(100px, 50px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*  #################### On hover, apply rotate ####################  */
+
+.box.rotate-x:hover {
+    transform: rotateX(45deg);
+     transition: transform 0.3s ease-in-out;
+}
+.box.rotate-y:hover {
+    transform: rotateY(45deg);
+     transition: transform 0.3s ease-in-out;
+}
+.box.rotate:hover {
+    transform: rotate(45deg); /* 2D rotation */
+     transition: transform 0.3s ease-in-out;
+}
+
+/*  #################### On hover, apply Scale ####################  */
+
+.box.scale-x:hover {
+    transform: scaleX(1.5);
+    transition: transform 0.5s ease;
+}
+
+.box.scale-y:hover {
+    transform: scaleY(1.5);
+    transition: transform 0.5s ease;
+}
+
+.box.scale:hover {
+    transform: scale(1.5, 1.2);
+    transition: transform 0.5s ease;
+}
+
+/* #################### On hover, apply Skew ####################  */
+
+.box.skew-x:hover {
+    transform: skewX(20deg);
+    transition: transform 0.5s ease;
+}
+
+.box.skew-y:hover {
+    transform: skewY(20deg);
+    transition: transform 0.5s ease;
+}
+
+.box.skew:hover {
+    transform: skew(20deg, 10deg);
+    transition: transform 0.5s ease;
+}
+
